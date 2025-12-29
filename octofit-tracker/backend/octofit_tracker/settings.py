@@ -1,3 +1,5 @@
+# Specify custom user model to avoid reverse accessor clashes
+AUTH_USER_MODEL = 'octofit_tracker.User'
 """
 Django settings for octofit_tracker project.
 

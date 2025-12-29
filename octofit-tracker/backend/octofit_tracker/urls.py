@@ -1,3 +1,7 @@
+from django.http import JsonResponse
+
+def root_view(request):
+    return JsonResponse({"message": "Welcome to the Octofit Tracker API. Visit /api/ for endpoints."})
 """octofit_tracker URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -39,6 +43,8 @@ def api_root(request, format=None):
         'leaderboard': '/api/leaderboard/',
     })
 
+
+import os
 codespace_name = os.environ.get('CODESPACE_NAME')
 if codespace_name:
     base_url = f"https://{codespace_name}-8000.app.github.dev"
@@ -46,6 +52,7 @@ else:
     base_url = "http://localhost:8000"
 
 urlpatterns = [
+    path('', root_view, name='root'),
     path('admin/', admin.site.urls),
     path('api/', api_root, name='api-root'),
     path('api/', include(router.urls)),
