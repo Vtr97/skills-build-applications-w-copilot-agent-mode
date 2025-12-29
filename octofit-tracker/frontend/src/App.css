@@ -1,0 +1,120 @@
+
+body {
+  background: linear-gradient(135deg, #f0f4f9 0%, #e0e7ef 100%);
+  color: #222b45;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Logo styling */
+.octofit-logo {
+  height: 48px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+/* Navbar custom color */
+.navbar {
+  background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%) !important;
+  box-shadow: 0 2px 8px rgba(30,60,114,0.08);
+}
+.navbar-brand, .navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover {
+  color: #ffd700 !important;
+}
+
+/* Headings */
+h1, h2, h3, .card-title {
+  color: #1e3c72;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Table styling */
+.table {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(30,60,114,0.05);
+}
+.table thead {
+  background: #2a5298;
+  color: #fff;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f0f4f9;
+}
+.table-hover tbody tr:hover {
+  background-color: #e0e7ef;
+}
+
+/* Buttons */
+.btn, .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger {
+  border-radius: 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(30,60,114,0.08);
+}
+.btn-primary {
+  background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+  border: none;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background: #ffd700;
+  color: #1e3c72;
+}
+
+/* Card styling */
+.card {
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 4px 16px rgba(30,60,114,0.10);
+}
+
+/* Links */
+a, .App-link {
+  color: #2a5298;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+a:hover, .App-link:hover {
+  color: #ffd700;
+}
+
+/* Alerts */
+.alert-info {
+  background: #e0e7ef;
+  color: #1e3c72;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Custom scrollbar for tables */
+.table-responsive::-webkit-scrollbar {
+  height: 8px;
+  background: #e0e7ef;
+}
+.table-responsive::-webkit-scrollbar-thumb {
+  background: #2a5298;
+  border-radius: 8px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
