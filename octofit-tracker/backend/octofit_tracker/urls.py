@@ -43,8 +43,6 @@ def api_root(request, format=None):
         'leaderboard': '/api/leaderboard/',
     })
 
-
-import os
 codespace_name = os.environ.get('CODESPACE_NAME')
 if codespace_name:
     base_url = f"https://{codespace_name}-8000.app.github.dev"
